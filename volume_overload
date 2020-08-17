@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+void volume(int r)
+{
+        cout<<"Volume of Sphere= "<<(4/3)*3.142*r*r*r<<endl;
+}
+void volume(int radius,int h)
+{
+    cout<<"Radius= "<<radius<<endl;
+    cout<<"Height= "<<h<<endl;
+    float calc= radius*radius*h*3.142*(1.0/3.0);
+    cout<<"Volume of Cylinder= "<<calc<<endl; 
+}
+void volume(int l,int b,int h)
+{
+    cout<<"Volume of Cuboid= "<<l*b*h;
+}
+int main() {
+	int r,radius,h,b,h2,l;
+	/*cout<<"Enter the radius of sphere:";
+	cin>>r;
+	volume(r);*/
+	cout<<"Enter the radius and height of cylinder: ";
+	cin>>radius>>h;
+	volume(radius,h);
+	/*cout<<"Enter the length,breadth and height of cuboid: ";
+	cin>>l>>b>>h2;
+	volume(l,b,h2);*/
+	return 0;
+}
