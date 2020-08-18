@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-void sq_cube(int n,int p)
+inline void sq_cube(int n,int p)
 {
     cout<<"Result="<<pow(n,p);
 }
